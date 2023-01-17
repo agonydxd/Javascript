@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos domt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="botao">
+        <p>interaja</p>
+    </div>
+
+    <script>
+        var b =window.document.getElementById('botao')
+        b.addEventListener('click',clicar)
+        b.addEventListener('mouseenter', entrar)
+        b.addEventListener('mouseout', sair)
+
+        function clicar()
+        {
+         b.innerText = 'clicou!'
+         b.style.background = 'red'
+        }   
+
+        function entrar() {
+            b.innerText = 'entrou!'
+            b.style.background = 'blue'
+        }
+
+
+         function sair() {
+            b.innerText = 'saiu!'
+            b.style.background = 'green'
+         }
+    </script>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="p-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: #b992df;
+        font-size: larger;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h1{
+        color: rgb(150, 241, 200);
+        font-size: 2.8em;
+    }
+
+    p{
+     color: rgb(99, 242, 242);
+     font-size: 1.2em;
+    }
+
+    seu nome é{
+        color: yellow;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Dados Pessoais</h1>
+    <p>coloque seus dados logo a baixo.</p>
+
+    <script>
+    var nome = window.prompt('Qual o seu nome?')
+    document.write(`seu nome é ${nome} e ele tem ${nome.length} letras </br>`)
+    document.writeln(`seu nome em maiusculo é ${nome.toUpperCase()}</br>`)
+    document.writeln(`Seu nome em minusculo é ${nome.toLowerCase()}</br>`)
+
+    var salario = window.prompt('qual o seu salario?')  //gera uma janela com a pergunta 'qual o seu salario?'
+     document.write(`seu salario de ${salario} esta  baixo do que o salario minimo brasileiro.</br>`)
+     var minimo = '1.145' //salario minimo brasileiro
+     minimo.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+     document.write(` o Salario minimo do brasil é de ${minimo}`) //gera o salario minimo
+    </script>
+</body>
+</html>

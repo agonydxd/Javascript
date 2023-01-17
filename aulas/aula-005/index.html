@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        body{
+         background-color: rgb(45, 90, 168);
+         font-size: normal;
+         font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução a DOM</h1>
+    </div>
+    <p><strong>dom</strong> é uma sigla para document object model</p>
+    <p>Clique aqui</p>
+    <div id="msg">
+        <p>ola, Mundo!</p>
+    </div>
+
+    <script>
+    var d = window.document.getElementById('msg')
+    d.innerText = 'estou aguardando...'
+    d.style.backgroundColor = 'red'
+// window.document.getElementById('msg').innerText= 'aguardando...'
+//por nome
+//div name='msg'
+//var n = window.document.getElementsByName('.msg')
+ </script>
+ <p>por seletores</p>
+  <script>
+    var d = window.document.querySelector('div#msg')
+    d.style.color = 'blue'
+  </script>
+    
+</body>
+</html>
