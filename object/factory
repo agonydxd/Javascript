@@ -1,0 +1,16 @@
+function createmicrofone(color = 'black') {
+let isOn = true
+   return{
+    color,
+
+  toggleOnOff : function(){
+    if(isOn){
+        console.log('desligar') 
+    }else{
+        console.log('ligar')
+  }
+  isOn = !isOn
+}
+}
+}
+console.log(createmicrofone.return)
