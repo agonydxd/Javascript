@@ -6,5 +6,5 @@ function parimp(n) {
     }
 }
 
-let res = parimp(5)
+let res = parimp(8)
 console.log(res)
